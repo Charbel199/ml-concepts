@@ -10,6 +10,7 @@
 &emsp; **[- Deep Neural Networks](#usage-instructions)**<br>
 &emsp; **[- Convolution Neural Networks](#usage-instructions)**<br>
 &emsp; **[- Generative Adversarial Networks](#usage-instructions)**<br>
+&emsp;&emsp; **[- Generative Adversarial Networks](models/GAN/SimpleGAN.py)**<br>
 **[- Evaluation Metrics](#troubleshooting)**<br>
 &emsp; **[- Classification Metrics](#usage-instructions)**<br>
 &emsp; **[- Regression Metrics](#usage-instructions)**<br>
