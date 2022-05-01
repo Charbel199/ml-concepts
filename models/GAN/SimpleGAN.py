@@ -68,12 +68,16 @@ writer_fake = SummaryWriter(f"runs/GAN_MNIST/fake")  # For fake images
 writer_real = SummaryWriter(f"runs/GAN_MNIST/real")  # For real images
 step = 0
 
+# Prepare models for training
+generator.train()
+discriminator.train()
+
 for epoch in range(epochs):
     for batch_idx, (real_image, _) in enumerate(loader):
         batch_size = real_image.shape[0]
 
         ## Fetching real image and generating FAKE image
-        # Real represents the actual MNIST image
+        # Real image represents the actual MNIST image
         real_image = real_image.view(-1, 28 * 28).to(device)
         # Noise represents a random matrix of noise used by the generator as input
         noise = torch.randn(batch_size, noise_dimension).to(device)
@@ -117,9 +121,9 @@ for epoch in range(epochs):
                 img_grid_real = torchvision.utils.make_grid(data, normalize=True)
 
                 writer_fake.add_image(
-                    "Mnist Fake Images", img_grid_fake, global_step=step
+                    "Fake Images", img_grid_fake, global_step=step
                 )
                 writer_real.add_image(
-                    "Mnist Real Images", img_grid_real, global_step=step
+                    "Real Images", img_grid_real, global_step=step
                 )
                 step += 1
