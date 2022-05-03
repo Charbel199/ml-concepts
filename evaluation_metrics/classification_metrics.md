@@ -29,5 +29,5 @@ It also punishes extreme values and is mostly effective in the following scenari
 * When true negatives are high
 <br>
 <br>
-![f1score](https://latex.codecogs.com/gif.latex?%5Cbg_white%20F1%20%3D%202%20%5Ctimes%20%5Cfrac%7BP%20%5Ctimes%20R%20%7D%7BP%20&plus;%20R%7D)
-
+![fscore](https://latex.codecogs.com/gif.latex?%5Cbg_white%20F1%20%3D%202%20%5Ctimes%20%5Cfrac%7BP%20%5Ctimes%20R%20%7D%7BP%20&plus;%20R%7D)
+<br>
