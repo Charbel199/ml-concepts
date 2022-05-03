@@ -14,7 +14,7 @@
 &emsp;&emsp; **[- Simple GAN](models/GAN/SimpleGAN.py)**<br>
 &emsp;&emsp; **[- Deep Convolutional GAN](models/GAN/DCGan.py)**<br>
 **[- Evaluation Metrics](#troubleshooting)**<br>
-&emsp; **[- Classification Metrics](#usage-instructions)**<br>
+&emsp; **[- Classification Metrics](evaluation_metrics/classification_metrics.md)**<br>
 &emsp; **[- Regression Metrics](#usage-instructions)**<br>
 **[- Ensemble Learning](#troubleshooting)**<br>
 **[- Transfer Learning](#troubleshooting)**<br>
