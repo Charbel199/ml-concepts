@@ -40,4 +40,4 @@ The log loss is one of the major metrics to assess the performance of a classifi
 For a single sample with true label y∈{0,1} and a probability estimate p=Pr(y=1), the log loss is:
 <br>
 <br>
-![logloss](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Ctext%7Blogloss%7D%20%3D%20y%20.log%28p%29%20&plus;%20%281-y%29.log%281-p%29)
+![logloss](https://latex.codecogs.com/gif.latex?%5Cbg_white%20LL%20%3D%20y.log%28p%29%20&plus;%20%281-y%29.log%281-p%29)
