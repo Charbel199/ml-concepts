@@ -21,14 +21,11 @@ Recall explains how many of the actual positive cases we were able to predict co
 <br>
 ![recall](https://latex.codecogs.com/gif.latex?%5Cbg_white%20Recall%20%3D%20%5Cfrac%7BTP%7D%7BTP%20&plus;%20FN%7D)
 
-## F1 Score
-The F1 score gives a combined idea about Precision and Recall metrics. It is maximum when Precision is equal to Recall.
-It also punishes extreme values and is mostly effective in the following scenarios:
-* When FP and FN are equally unwanted
-* When adding more data does not affect the results
-* When true negatives are high
+## Recall
+Recall explains how many of the actual positive cases we were able to predict correctly with our model. It is useful when False Negatives are of higher concern than False Positives.
 <br>
 <br>
-![fscore](../assets/F1Score.png)
+![recall](https://latex.codecogs.com/gif.latex?%5Cbg_white%20Recall%20%3D%20%5Cfrac%7BTP%7D%7BTP%20&plus;%20FN%7D)
+
 
 
