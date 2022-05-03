@@ -23,7 +23,7 @@ Recall explains how many of the actual positive cases we were able to predict co
 
 
 ## F1 Score
-he F1 score gives a combined idea about Precision and Recall metrics. It is maximum when Precision is equal to Recall.
+The F1 score gives a combined idea about Precision and Recall metrics. It is maximum when Precision is equal to Recall.
 It also punishes extreme values and is mostly effective in the following scenarios:
 <br>
 **1- When FP and FN are equally unwanted<br>
@@ -34,3 +34,10 @@ It also punishes extreme values and is mostly effective in the following scenari
 ![recall](https://latex.codecogs.com/gif.latex?%5Cbg_white%20F1%20%3D%202%20%5Ctimes%20%5Cfrac%7BP%20%5Ctimes%20R%20%7D%7BP%20&plus;%20R%7D)
 
 
+## Log Loss or Cross-Entropy Loss
+
+The log loss is one of the major metrics to assess the performance of a classification problem.<br>
+For a single sample with true label y∈{0,1} and a probability estimate p=Pr(y=1), the log loss is:
+<br>
+<br>
+![logloss](https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Ctext%7Blogloss%7D%20%3D%20y%20.log%28p%29%20&plus;%20%281-y%29.log%281-p%29)
