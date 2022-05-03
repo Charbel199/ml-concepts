@@ -20,6 +20,7 @@ Recall explains how many of the actual positive cases we were able to predict co
 <br>
 <br>
 ![recall](https://latex.codecogs.com/gif.latex?%5Cbg_white%20Recall%20%3D%20%5Cfrac%7BTP%7D%7BTP%20&plus;%20FN%7D)
+![recall](https://latex.codecogs.com/gif.latex?%5Cbg_white%20Recall%20%3D%20%5Cfrac%7BTP%7D%7BTP%20&plus;%20FN%7D)
 
 ## F1 Score
 The F1 score gives a combined idea about Precision and Recall metrics. It is maximum when Precision is equal to Recall.
