@@ -26,4 +26,10 @@ We have two types of SVMs:
   * Kernel represents the kernel type
   * C is a regularization parameter (The strength of the regularization is inversely proportional to C)
 
+Some of the most relevant SVM kernels:
+* Polynomial kernel: Popular in Image processing
+* Gaussian kernel: t is a general-purpose kernel; used when there is no prior knowledge about the data
+* Gaussian radial basis function (RBF): Same use-case as the Gaussian kernel
+* Laplace RBF kernel: Same use-case as the Gaussian kernel
+
 Here is a simple SVR [code sample](./SVR.py)
