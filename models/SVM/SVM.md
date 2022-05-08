@@ -1,6 +1,6 @@
 # Support Vector Machine
 
-A support vector machine simple tries to find a separation between data points  in multidimensional space.
+A support vector machine simply tries to find a separation between data points  in multidimensional space.
 The separation could be linear or non-linear.
 
 The main components of an SVM are:
