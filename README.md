@@ -8,6 +8,7 @@
 **[- Types of Machine learning models](#installation-instructions)**<br>
 &emsp; **[- Simple Supervised Models](#usage-instructions)**<br>
 &emsp;&emsp; **[- SVM](models/SVM/SVM.md)**<br>
+&emsp;&emsp; **[- KNN](models/KNN/KNN.md)**<br>
 &emsp; **[- Simple Unsupervised Models](#usage-instructions)**<br>
 &emsp; **[- Simple Reinforcement Learning Models](#usage-instructions)**<br>
 &emsp; **[- Deep Neural Networks](#usage-instructions)**<br>
