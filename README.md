@@ -9,6 +9,7 @@
 &emsp; **[- Simple Supervised Models](#usage-instructions)**<br>
 &emsp;&emsp; **[- SVM](models/SVM/SVM.md)**<br>
 &emsp;&emsp; **[- KNN](models/KNN/KNN.md)**<br>
+&emsp;&emsp; **[- Random Forest](models/random_forest/random_forest.md)**<br>
 &emsp; **[- Simple Unsupervised Models](#usage-instructions)**<br>
 &emsp; **[- Simple Reinforcement Learning Models](#usage-instructions)**<br>
 &emsp; **[- Deep Neural Networks](#usage-instructions)**<br>
