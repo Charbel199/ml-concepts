@@ -14,7 +14,10 @@
 &emsp; **[- Simple Unsupervised Models](#usage-instructions)**<br>
 &emsp; **[- Simple Reinforcement Learning Models](#usage-instructions)**<br>
 &emsp; **[- Deep Neural Networks](#usage-instructions)**<br>
+&emsp; &emsp;  **[- Simple DNN](#usage-instructions)**<br>
 &emsp; **[- Convolution Neural Networks](#usage-instructions)**<br>
+&emsp; &emsp; **[- Simple CNN](models/CNN/simple_CNN/simple_CNN.py)**<br>
+&emsp; &emsp; **[- Image Segmentation Network](#usage-instructions)**<br>
 &emsp; **[- Generative Adversarial Networks](#usage-instructions)**<br>
 &emsp;&emsp; **[- Simple GAN](models/GAN/SimpleGAN.py)**<br>
 &emsp;&emsp; **[- Deep Convolutional GAN](models/GAN/DCGan.py)**<br>

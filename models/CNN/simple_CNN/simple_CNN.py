@@ -9,7 +9,6 @@ import numpy as np
 import torch.optim as optim
 
 
-
 class CNN(nn.Module):
     def __init__(self, input_channels):
         super().__init__()
@@ -86,5 +85,5 @@ plt.imshow(images[0][0])
 plt.show()
 print('GroundTruth: ', ' '.join('%5s' % classes[labels[j]] for j in range(batch_size)))
 outputs = model(images)
-predicted = torch.max(outputs, 1)
-print('Predicted: ', ' '.join('%5s' % classes[predicted[j]] for j in range(batch_size)))
+predicted = torch.argmax(outputs, 1).tolist()
+print('Predicted: ', ' '.join('%5s' % classes[round(predicted[j])] for j in range(batch_size)))
