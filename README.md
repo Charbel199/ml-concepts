@@ -11,8 +11,8 @@
 &emsp;&emsp; **[- KNN](models/KNN/KNN.md)**<br>
 &emsp;&emsp; **[- Random Forest](models/random_forest/random_forest.md)**<br>
 &emsp;&emsp; **[- Naive Bayes](models/naive_bayes/naive_bayes.md)**<br>
-&emsp; **[- Simple Unsupervised Models](#usage-instructions)**<br>
-&emsp; **[- Simple Reinforcement Learning Models](#usage-instructions)**<br>
+&emsp; **[- Unsupervised Models](#usage-instructions)**<br>
+&emsp; **[- Reinforcement Learning Models](#usage-instructions)**<br>
 &emsp; **[- Deep Neural Networks](#usage-instructions)**<br>
 &emsp; &emsp;  **[- Simple DNN](models/DNN/simple_DNN/simple_DNN.py)**<br>
 &emsp; **[- Convolution Neural Networks](#usage-instructions)**<br>
