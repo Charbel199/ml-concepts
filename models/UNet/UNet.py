@@ -51,6 +51,9 @@ class UNET(nn.Module):
         for index in range(0, len(self.ups), 2):
             x = self.ups[index](x)
             skip_connection = skip_connections[index // 2]
+
+            if x.shape != skip_connection.shape:
+                x = TF.resize(x, size=skip_connection.shape[2:]) # Just getting height and width
             concatenate_skip = torch.cat((skip_connection, x), dim=1)
             x = self.ups[index + 1](concatenate_skip)
 
