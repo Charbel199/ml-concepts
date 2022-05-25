@@ -19,7 +19,6 @@ class DoubleConvolution(nn.Module):
         return self.conv(x)
 
 
-
 class UNET(nn.Module):
     def __init__(self, in_channels=3, out_channels=1, features=None):
         super().__init__()
