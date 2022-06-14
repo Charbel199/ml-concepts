@@ -5,6 +5,12 @@
 &emsp; **[- Data augmentation](Evaluation.md#Test)**<br>
 &emsp; **[- Batch Normalization](regularization/batch_normalization.md)**<br>
 &emsp; **[- K-fold Cross-Validation](regularization/kfold_cross_validation.md)**<br>
+**[- Loss Functions](Evaluation.md)**<br>
+&emsp; **[- Classification](loss_functions/classification)**<br>
+&emsp;&emsp; **[- Binary Cross Entropy (BCE) Loss](loss_functions/classification/binary_cross_entropy_loss.md)**<br>
+&emsp;&emsp; **[- Categorical Cross Entropy Loss](loss_functions/classification/cross_entropy_loss.md)**<br>
+&emsp;&emsp; **[- Squared Hinge Loss](loss_functions/classification/squared_hinge_loss.md)**<br>
+&emsp; **[- Regression](loss_functions/regression)**<br>
 **[- Types of Machine learning models](#installation-instructions)**<br>
 &emsp; **[- Simple Supervised Models](#usage-instructions)**<br>
 &emsp;&emsp; **[- SVM](models/SVM/SVM.md)**<br>
