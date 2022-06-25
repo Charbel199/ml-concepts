@@ -3,6 +3,6 @@ Binary cross entropy loss is used when the classification problem is limited to 
 
 Here is the loss function equation:
 
-![bce](../../assets/bce_loss.png)
+![bce](../../assets/BCELoss.png)
 
 Output Layer Configuration: One node with a **sigmoid** activation unit.
