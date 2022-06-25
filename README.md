@@ -11,6 +11,9 @@
 &emsp;&emsp; **[- Categorical Cross Entropy Loss](loss_functions/classification/cross_entropy_loss.md)**<br>
 &emsp;&emsp; **[- Squared Hinge Loss](loss_functions/classification/squared_hinge_loss.md)**<br>
 &emsp; **[- Regression](loss_functions/regression)**<br>
+&emsp;&emsp; **[- MSE Loss](loss_functions/regression/mse_loss.md)**<br>
+&emsp;&emsp; **[- MAE Loss](loss_functions/regression/mae_loss.md)**<br>
+&emsp;&emsp; **[- Huber Loss](loss_functions/regression/huber_loss.md)**<br>
 **[- Types of Machine learning models](models)**<br>
 &emsp; **[- Simple Supervised Models](models/supervised)**<br>
 &emsp;&emsp; **[- SVM](models/supervised/SVM/SVM.md)**<br>
