@@ -13,3 +13,5 @@ the training data, fitting a model to these smaller data sets, and aggregating t
 Why use random forests ?
 * Since we are creating a multitude of decision trees, it naturally incorporates cross validation
 * Great handling large datasets with high dimensionality
+
+Here is a simple Random Forest implementation [code sample](random_forest.py)

@@ -7,3 +7,6 @@ During training/fit process, KNN arranges the data (sort of indexing process) in
 Some common problems with choosing a K value:
 * Choosing a large K value might lead to underfitting (Model does not properly learn)
 * Choosing a small K value might lead to overfitting
+
+
+Here is a simple KNN [code sample](KNN.py)
