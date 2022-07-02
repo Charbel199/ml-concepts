@@ -1,5 +1,10 @@
 # Machine Learning Concepts
 
+The aim of this repository is to store all machine learning concepts I have acquired from my experiences, courses, projects, etc ... 
+Some parts are  shown through (Mostly models) and some others are explained in text files.
+
+I will be trying to keep a clear separation between all the concepts and update them regularly as I acquire more information.
+
 ### Table of Contents
 **[- Regularization](regularization)**<br>
 &emsp; **[- Data augmentation](regularization/data_augmentation/data_augmentation.md)**<br>
