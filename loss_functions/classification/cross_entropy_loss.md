@@ -3,7 +3,7 @@ Cross entropy loss is used when the classification problem has more than 2 class
 
 Here is the loss function equation:
 
-![ce](../../assets/categorical_cross_entropy_loss.png)
+![ce](../../assets/CategoricalCrossEntropy.png)
 
 Output Layer Configuration: One node for each class using the **softmax** activation function.
 
