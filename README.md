@@ -5,6 +5,9 @@ Some parts are  shown through (Mostly models) and some others are explained in t
 
 I will be trying to keep a clear separation between all the concepts and update them regularly as I acquire more information.
 
+**Note: Most explanations are very summarized, the goal here is to quickly refresh your mind when looking up a concept and 
+emphasizing on the use cases, benefits and drawbacks.**
+
 ### Table of Contents
 **[- Regularization](regularization)**<br>
 &emsp; **[- Data augmentation](regularization/data_augmentation/data_augmentation.md)**<br>
