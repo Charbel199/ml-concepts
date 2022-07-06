@@ -11,7 +11,7 @@ def load_np(name) -> np.ndarray:
 
 # Need to override __init__, __len__, __getitem__
 # as per datasets requirement
-class OilEnvironmentDataset(Dataset):
+class CustomDataset(Dataset):
     def __init__(self, data_dir, transform=None):
         self.data_dir = data_dir
         self.transform = transform
@@ -25,16 +25,12 @@ class OilEnvironmentDataset(Dataset):
         x = torch.from_numpy(load_np(os.path.join(self.data_dir, f"x{index}"))).float()
         y = torch.from_numpy(load_np(os.path.join(self.data_dir, f"y{index}"))).float()
 
-        # To be reviewed and check if it works on numpy arrays directly
         if self.transform is not None:
             augmentations = self.transform(image=x, mask=y)
             x = augmentations["image"]
             y = augmentations["mask"]
 
         x = torch.moveaxis(x, -1, 0)
-
-
-
 
         return x, y
 
@@ -48,7 +44,7 @@ def get_loaders(
         num_workers=4,
         pin_memory=True,
 ):
-    train_ds = OilEnvironmentDataset(
+    train_ds = CustomDataset(
         data_dir=train_dir,
         transform=train_transform,
     )
@@ -61,7 +57,7 @@ def get_loaders(
         shuffle=True,
     )
 
-    val_ds = OilEnvironmentDataset(
+    val_ds = CustomDataset(
         data_dir=val_dir,
         transform=val_transform,
     )
