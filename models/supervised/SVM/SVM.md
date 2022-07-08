@@ -33,3 +33,6 @@ Some of the most relevant SVM kernels:
 * Laplace RBF kernel: Same use-case as the Gaussian kernel
 
 Here is a simple SVR [code sample](SVR.py)
+
+## Reference(s)
+[Support Vector Machines: Theory and Applications](https://www.researchgate.net/publication/221621494_Support_Vector_Machines_Theory_and_Applications)

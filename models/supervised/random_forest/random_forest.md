@@ -15,3 +15,6 @@ Why use random forests ?
 * Great handling large datasets with high dimensionality
 
 Here is a simple Random Forest implementation [code sample](random_forest.py)
+
+## Reference(s)
+[Random Forests](https://link.springer.com/article/10.1023/A:1010933404324)

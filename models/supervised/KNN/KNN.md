@@ -10,3 +10,6 @@ Some common problems with choosing a K value:
 
 
 Here is a simple KNN [code sample](KNN.py)
+
+## Reference(s)
+[KNN Model-Based Approach in Classification](https://www.researchgate.net/publication/2948052_KNN_Model-Based_Approach_in_Classification)

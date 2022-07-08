@@ -8,3 +8,6 @@ Here is the loss function equation:
 Output Layer Configuration: One node for each class using the **softmax** activation function.
 
 Argmax could be used after the softmax activation function to determine the maximum likelihood class.
+
+## Reference(s)
+[Cross Entropy Loss](https://pytorch.org/docs/stable/generated/torch.nn.CrossEntropyLoss.html)

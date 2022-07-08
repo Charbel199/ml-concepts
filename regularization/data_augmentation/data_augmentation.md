@@ -18,3 +18,6 @@ In this technique, new instances of existing images are generated through the fo
 
 ![data_augmentation](../../assets/DataAugmentation.png)
 _A survey on Image Data Augmentation for Deep Learning, Connor Shorten & Taghi M. Khoshgoftaar_
+
+## Reference(s)
+[Data augmentation](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-019-0197-0)

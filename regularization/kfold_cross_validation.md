@@ -26,3 +26,6 @@ Benefits of K-fold Cross Validation:
 * Ensures that every data point has a change of appearing in the training and validation datasets
 * Helps in detecting overfitting
 * Average every fold's score for a more general score estimate of the model
+
+## Reference(s)
+[Sci-kit learn cross  validation](https://scikit-learn.org/stable/modules/cross_validation.html)

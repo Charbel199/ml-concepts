@@ -18,3 +18,6 @@ these parameters are trainable and will be optimized during the training process
 * Faster training time
 * Decreases the importance of initial weights
 * Model regularization (Introduces randomness due to the mean and variance for every neuron activation which is highly dependent on the batch)
+
+## Reference(s)
+[Batch Normalization Orthogonalizes Representations in Deep Random Networks](https://arxiv.org/abs/2106.03970)
