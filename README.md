@@ -16,6 +16,7 @@ emphasizing on the use cases, benefits and drawbacks.**
 &emsp; **[- Dropout](regularization/dropout.md)**<br>
 &emsp; **[- L2 Regularization](regularization/l2_regularization.md)**<br>
 &emsp; **[- Early Stopping](regularization/early_stopping.md)**<br>
+&emsp; **[- Curriculum Learning](regularization/curriculum_learning.md)**<br>
 **[- Loss Functions](loss_functions)**<br>
 &emsp; **[- Classification](loss_functions/classification)**<br>
 &emsp;&emsp; **[- Binary Cross Entropy (BCE) Loss](loss_functions/classification/binary_cross_entropy_loss.md)**<br>
