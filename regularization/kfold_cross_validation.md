@@ -17,7 +17,7 @@ several identical models are trained with the only difference in each iteration 
 Here is an illustration showing the concept of K-fold Cross Validation:
 <br/>
 
-![kfold](../assets/KFoldCrossValidaiton.png)
+![kfold](../docs/KFoldCrossValidaiton.png)
 
 <br/>
 

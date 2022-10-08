@@ -8,7 +8,7 @@ In simple terms, each random forest has multiple decision trees and the result i
 Random Forests are trained via the bagging method. Bagging or Bootstrap Aggregating, consists of randomly sampling subsets of
 the training data, fitting a model to these smaller data sets, and aggregating the predictions.
 
-![random_forest](../../../assets/RandomForest.png)
+![random_forest](../../../docs/RandomForest.png)
 
 Why use random forests ?
 * Since we are creating a multitude of decision trees, it naturally incorporates cross validation

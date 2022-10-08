@@ -12,7 +12,7 @@ The main components of an SVM are:
 <br />
 <br />
 
-![SVM](../../../assets/SVM.png)
+![SVM](../../../docs/SVM.png)
 
 <br />
 

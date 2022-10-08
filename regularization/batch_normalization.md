@@ -6,7 +6,7 @@ instability in our model. Normalization happens on a per-batch basis.
 
 
 <div align="center">
-<img src="../assets/BatchNormalization.png"  width="=300" height="400">
+<img src="../docs/BatchNormalization.png"  width="=300" height="400">
 </div>
 
 As can be seen in the formulas, after normalizing, we have a scale and shift operation using gamma and beta,

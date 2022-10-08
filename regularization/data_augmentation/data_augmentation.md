@@ -16,7 +16,7 @@ In this technique, new instances of existing images are generated through the fo
 * GAN-based Data Augmentation
 * Neural Style Transfer
 
-![data_augmentation](../../assets/DataAugmentation.png)
+![data_augmentation](../../docs/DataAugmentation.png)
 _A survey on Image Data Augmentation for Deep Learning, Connor Shorten & Taghi M. Khoshgoftaar_
 
 ## Reference(s)

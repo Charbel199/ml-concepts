@@ -3,7 +3,7 @@ The squared hinge is used to draw an accurate decision boundary which penalizes 
 
 Here is the loss function equation:
 
-![shl](../../assets/SquaredHingeLoss.png)
+![shl](../../docs/SquaredHingeLoss.png)
 
 Output Layer Configuration: One node with a **tanh** activation unit. (Target values are in the set {-1, 1})
 

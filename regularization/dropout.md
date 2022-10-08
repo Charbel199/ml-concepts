@@ -6,7 +6,7 @@ This is very useful in cases where the model relies on specific features for the
 and thus making it more general.
 
 
-![dropout_concept](../assets/DropoutConcept.png)
+![dropout_concept](../docs/DropoutConcept.png)
 
 
 There are several dropout functions but the most well-known one would be: "Inverted Dropout"
