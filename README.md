@@ -45,7 +45,7 @@ emphasizing on the use cases, benefits and drawbacks.**
 **[- Evaluation Metrics](evaluation_metrics)**<br>
 &emsp; **[- Classification Metrics](evaluation_metrics/classification_metrics.md)**<br>
 &emsp; **[- Regression Metrics](evaluation_metrics/regression_metrics.md)**<br>
-
+**[- Transfer Learning](evaluation_metrics)**<br>
 [//]: # (**[- Ensemble Learning]&#40;#troubleshooting&#41;**<br>)
 
 [//]: # (**[- Transfer Learning]&#40;#troubleshooting&#41;**<br>)
