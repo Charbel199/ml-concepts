@@ -14,6 +14,7 @@ emphasizing on the use cases, benefits and drawbacks.**
 &emsp; **[- Batch Normalization](regularization/batch_normalization.md)**<br>
 &emsp; **[- K-fold Cross-Validation](regularization/kfold_cross_validation.md)**<br>
 &emsp; **[- Dropout](regularization/dropout.md)**<br>
+&emsp; **[- L1 Regularization](regularization/l1_regularization.md)**<br>
 &emsp; **[- L2 Regularization](regularization/l2_regularization.md)**<br>
 &emsp; **[- Early Stopping](regularization/early_stopping.md)**<br>
 &emsp; **[- Curriculum Learning](regularization/curriculum_learning.md)**<br>
@@ -46,6 +47,3 @@ emphasizing on the use cases, benefits and drawbacks.**
 &emsp; **[- Classification Metrics](evaluation_metrics/classification_metrics.md)**<br>
 &emsp; **[- Regression Metrics](evaluation_metrics/regression_metrics.md)**<br>
 **[- Transfer Learning](transfer_learning.md)**<br>
-
-
-[//]: # (**[- Transfer Learning]&#40;#troubleshooting&#41;**<br>)
