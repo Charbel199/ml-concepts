@@ -16,6 +16,7 @@ emphasizing on the use cases, benefits and drawbacks.**
 &emsp; **[- Dropout](regularization/dropout.md)**<br>
 &emsp; **[- L1 Regularization](regularization/l1_regularization.md)**<br>
 &emsp; **[- L2 Regularization](regularization/l2_regularization.md)**<br>
+&emsp; **[- Elastic Net Regularization](regularization/elastic_net_regularization.md)**<br>
 &emsp; **[- Early Stopping](regularization/early_stopping.md)**<br>
 &emsp; **[- Curriculum Learning](regularization/curriculum_learning.md)**<br>
 **[- Loss Functions](loss_functions)**<br>
