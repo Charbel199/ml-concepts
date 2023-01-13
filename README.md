@@ -36,14 +36,14 @@ emphasizing on the use cases, benefits and drawbacks.**
 &emsp;&emsp; **[- Naive Bayes](models/supervised/naive_bayes/naive_bayes.md)**<br>
 &emsp; **[- Unsupervised Models](models/unsupervised)**<br>
 &emsp; **[- Reinforcement Learning Models](models/reinforcement_learning)**<br>
-&emsp; **[- Deep Neural Networks](models/DNN)**<br>
-&emsp; &emsp;  **[- Simple DNN](models/DNN/simple_DNN/simple_DNN.py)**<br>
-&emsp; **[- Convolution Neural Networks](models/CNN)**<br>
-&emsp; &emsp; **[- Simple CNN](models/CNN/simple_CNN/simple_CNN.py)**<br>
-&emsp; &emsp; **[- UNET](models/CNN/UNet/UNet.py)**<br>
-&emsp; **[- Generative Adversarial Networks](models/GAN)**<br>
-&emsp;&emsp; **[- Simple GAN](models/GAN/SimpleGAN.py)**<br>
-&emsp;&emsp; **[- Deep Convolutional GAN](models/GAN/DCGan.py)**<br>
+&emsp; **[- Deep Neural Networks](models/supervised/DNN)**<br>
+&emsp; &emsp;  **[- Simple DNN](models/supervised/DNN/simple_DNN/simple_DNN.py)**<br>
+&emsp; **[- Convolution Neural Networks](models/supervised/CNN)**<br>
+&emsp; &emsp; **[- Simple CNN](models/supervised/CNN/simple_CNN/simple_CNN.py)**<br>
+&emsp; &emsp; **[- UNET](models/supervised/CNN/UNet/UNet.py)**<br>
+&emsp; **[- Generative Adversarial Networks](models/supervised/GAN)**<br>
+&emsp;&emsp; **[- Simple GAN](models/supervised/GAN/SimpleGAN.py)**<br>
+&emsp;&emsp; **[- Deep Convolutional GAN](models/supervised/GAN/DCGan.py)**<br>
 **[- Evaluation Metrics](evaluation_metrics)**<br>
 &emsp; **[- Classification Metrics](evaluation_metrics/classification_metrics.md)**<br>
 &emsp; **[- Regression Metrics](evaluation_metrics/regression_metrics.md)**<br>
