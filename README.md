@@ -30,20 +30,21 @@ emphasizing on the use cases, benefits and drawbacks.**
 &emsp;&emsp; **[- Huber Loss](loss_functions/regression/huber_loss.md)**<br>
 **[- Types of Machine learning models](models)**<br>
 &emsp; **[- Simple Supervised Models](models/supervised)**<br>
+&emsp; **[- Unsupervised Models](models/unsupervised)**<br>
+&emsp; **[- Reinforcement Learning Models](models/reinforcement_learning)**<br>
+&emsp; **[- Models](models/)**<br>
 &emsp;&emsp; **[- SVM](models/SVM/SVM.md)**<br>
 &emsp;&emsp; **[- KNN](models/KNN/KNN.md)**<br>
 &emsp;&emsp; **[- Random Forest](models/random_forest/random_forest.md)**<br>
 &emsp;&emsp; **[- Naive Bayes](models/naive_bayes/naive_bayes.md)**<br>
-&emsp; **[- Unsupervised Models](models/unsupervised)**<br>
-&emsp; **[- Reinforcement Learning Models](models/reinforcement_learning)**<br>
-&emsp; **[- Deep Neural Networks](models/DNN)**<br>
-&emsp; &emsp;  **[- Simple DNN](models/DNN/simple_DNN/simple_DNN.py)**<br>
-&emsp; **[- Convolution Neural Networks](models/CNN)**<br>
-&emsp; &emsp; **[- Simple CNN](models/CNN/simple_CNN/simple_CNN.py)**<br>
-&emsp; &emsp; **[- UNET](models/CNN/UNet/UNet.py)**<br>
-&emsp; **[- Generative Adversarial Networks](models/GAN)**<br>
-&emsp;&emsp; **[- Simple GAN](models/GAN/SimpleGAN.py)**<br>
-&emsp;&emsp; **[- Deep Convolutional GAN](models/GAN/DCGan.py)**<br>
+&emsp;&emsp; **[- Deep Neural Networks](models/DNN)**<br>
+&emsp;&emsp;&emsp;  **[- Simple DNN](models/DNN/simple_DNN/simple_DNN.py)**<br>
+&emsp;&emsp; **[- Convolution Neural Networks](models/CNN)**<br>
+&emsp;&emsp;&emsp; **[- Simple CNN](models/CNN/simple_CNN/simple_CNN.py)**<br>
+&emsp;&emsp;&emsp; **[- UNET](models/CNN/UNet/UNet.py)**<br>
+&emsp;&emsp; **[- Generative Adversarial Networks](models/GAN)**<br>
+&emsp;&emsp;&emsp; **[- Simple GAN](models/GAN/SimpleGAN.py)**<br>
+&emsp;&emsp;&emsp; **[- Deep Convolutional GAN](models/GAN/DCGan.py)**<br>
 **[- Evaluation Metrics](evaluation_metrics)**<br>
 &emsp; **[- Classification Metrics](evaluation_metrics/classification_metrics.md)**<br>
 &emsp; **[- Regression Metrics](evaluation_metrics/regression_metrics.md)**<br>
