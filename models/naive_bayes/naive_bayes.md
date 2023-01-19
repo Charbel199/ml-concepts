@@ -3,7 +3,7 @@ This algorithm makes an assumption that all the variables in the dataset are “
 The parameters that are learned in Naive Bayes are the prior probabilities of different classes, as well as the likelihood of different features for each class.
 
 Here is the naive bayes formula:
-![NBFormula](../../../docs/NaiveBayesFormula.png)
+![NBFormula](../../docs/NaiveBayesFormula.png)
 
 Why use naive bayes?
 * Very simple to implement
