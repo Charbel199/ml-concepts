@@ -1,4 +1,4 @@
--[SVM](SVM.md)
--[KNN](KNN.md)
--[Random Forest](Random%20Forest.md)
--[Naive Bayes](Naive%20Bayes.md)
+- [SVM](SVM.md)
+- [KNN](KNN.md)
+- [Random Forest](Random%20Forest.md)
+- [Naive Bayes](Naive%20Bayes.md)
