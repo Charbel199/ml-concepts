@@ -1,0 +1,6 @@
+- [L1 Regularization](L1%20Regularization.md)
+- [L2 Regularization](L2%20Regularization.md)
+- [Elastic Net Regularization](Elastic%20Net%20Regularization.md)
+- [Dropout](Dropout.md)
+- [Batch Normalization](Batch%20Normalization.md)
+- [Early Stopping](Early%20Stopping.md)

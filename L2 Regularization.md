@@ -8,4 +8,5 @@ As we can see in the L2 regularization cost, it penalizes high values in the mod
 prone to overfitting.
 
 ## Reference(s)
-[L2 Regularization for Learning Kernels](https://arxiv.org/abs/1205.2653)[l1_regularization.md](l1_regularization.md)
+[L2 Regularization for Learning Kernels](https://arxiv.org/abs/1205.2653)
+[L1 regularization.md](L1%20Regularization.md)

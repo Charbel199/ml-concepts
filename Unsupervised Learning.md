@@ -1,0 +1,2 @@
+-[K-Means](K-Means.md)
+-[Principle Component Analysis](Principle%20Component%20Analysis.md)

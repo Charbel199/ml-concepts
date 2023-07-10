@@ -1,0 +1,3 @@
+- [Binary Cross Entropy Loss](Binary%20Cross%20Entropy%20Loss.md)
+- [Cross Entropy Loss](Cross%20Entropy%20Loss.md)
+- [Squared Hinge Loss](Squared%20Hinged%20Loss.md)

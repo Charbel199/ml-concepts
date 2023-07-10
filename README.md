@@ -5,47 +5,6 @@ Some parts are  shown through code (Mostly models) and some others are explained
 
 I will be trying to keep a clear separation between all the concepts and update them regularly as I acquire more information.
 
-**Note: Most explanations are very summarized, the goal here is to quickly refresh your mind when looking up a concept and 
-emphasizing on the use cases, benefits and drawbacks.**
+**Note: Most explanations are very summarized, the goal here is to quickly refresh your mind when looking up a concept and emphasizing on the use cases, benefits and drawbacks.**
 
-### Table of Contents
-**[- Regularization](regularization)**<br>
-&emsp; **[- Data augmentation](regularization/data_augmentation/data_augmentation.md)**<br>
-&emsp; **[- Batch Normalization](regularization/batch_normalization.md)**<br>
-&emsp; **[- K-fold Cross-Validation](regularization/kfold_cross_validation.md)**<br>
-&emsp; **[- Dropout](regularization/dropout.md)**<br>
-&emsp; **[- L1 Regularization](regularization/l1_regularization.md)**<br>
-&emsp; **[- L2 Regularization](regularization/l2_regularization.md)**<br>
-&emsp; **[- Elastic Net Regularization](regularization/elastic_net_regularization.md)**<br>
-&emsp; **[- Early Stopping](regularization/early_stopping.md)**<br>
-&emsp; **[- Curriculum Learning](regularization/curriculum_learning.md)**<br>
-**[- Loss Functions](loss_functions)**<br>
-&emsp; **[- Classification](loss_functions/classification)**<br>
-&emsp;&emsp; **[- Binary Cross Entropy (BCE) Loss](loss_functions/classification/binary_cross_entropy_loss.md)**<br>
-&emsp;&emsp; **[- Categorical Cross Entropy Loss](loss_functions/classification/cross_entropy_loss.md)**<br>
-&emsp;&emsp; **[- Squared Hinge Loss](loss_functions/classification/squared_hinge_loss.md)**<br>
-&emsp; **[- Regression](loss_functions/regression)**<br>
-&emsp;&emsp; **[- MSE Loss](loss_functions/regression/mse_loss.md)**<br>
-&emsp;&emsp; **[- MAE Loss](loss_functions/regression/mae_loss.md)**<br>
-&emsp;&emsp; **[- Huber Loss](loss_functions/regression/huber_loss.md)**<br>
-**[- Types of Machine learning models](models)**<br>
-&emsp; **[- Simple Supervised Models](models/supervised)**<br>
-&emsp; **[- Unsupervised Models](models/unsupervised)**<br>
-&emsp; **[- Reinforcement Learning Models](models/reinforcement_learning)**<br>
-&emsp; **[- Models](models/)**<br>
-&emsp;&emsp; **[- SVM](models/SVM/SVM.md)**<br>
-&emsp;&emsp; **[- KNN](models/KNN/KNN.md)**<br>
-&emsp;&emsp; **[- Random Forest](models/random_forest/random_forest.md)**<br>
-&emsp;&emsp; **[- Naive Bayes](models/naive_bayes/naive_bayes.md)**<br>
-&emsp;&emsp; **[- Deep Neural Networks](models/DNN)**<br>
-&emsp;&emsp;&emsp;  **[- Simple DNN](models/DNN/simple_DNN/simple_DNN.py)**<br>
-&emsp;&emsp; **[- Convolution Neural Networks](models/CNN)**<br>
-&emsp;&emsp;&emsp; **[- Simple CNN](models/CNN/simple_CNN/simple_CNN.py)**<br>
-&emsp;&emsp;&emsp; **[- UNET](models/CNN/UNet/UNet.py)**<br>
-&emsp;&emsp; **[- Generative Adversarial Networks](models/GAN)**<br>
-&emsp;&emsp;&emsp; **[- Simple GAN](models/GAN/SimpleGAN.py)**<br>
-&emsp;&emsp;&emsp; **[- Deep Convolutional GAN](models/GAN/DCGan.py)**<br>
-**[- Evaluation Metrics](evaluation_metrics)**<br>
-&emsp; **[- Classification Metrics](evaluation_metrics/classification_metrics.md)**<br>
-&emsp; **[- Regression Metrics](evaluation_metrics/regression_metrics.md)**<br>
-**[- Transfer Learning](transfer_learning.md)**<br>
+
