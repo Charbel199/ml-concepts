@@ -9,7 +9,7 @@ Some common problems with choosing a K value:
 * Choosing a small K value might lead to overfitting
 
 
-Here is a simple KNN [code sample](KNN.py)
+Here is a simple KNN [code sample](supervised_learning/KNN.py)
 
 ## Reference(s)
 [KNN Model-Based Approach in Classification](https://www.researchgate.net/publication/2948052_KNN_Model-Based_Approach_in_Classification)
