@@ -9,7 +9,7 @@ The effect of L1 regularization is to push the model's weights towards zero, whi
 This can be useful for feature selection, as it tends to give sparse solutions, with many weights equal to zero. This can be contrasted with L2 regularization(Ridge regularization),
 which adds a term to the loss function that penalizes the square of the magnitude of the model's weights, and encourages small weights, but not zero weights.
 
-![l1](../docs/L1Cost.png)
+![l1](docs/L1Cost.png)
 
 
 ## Reference(s)

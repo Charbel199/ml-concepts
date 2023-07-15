@@ -13,7 +13,7 @@ By combining these two penalties, Elastic Net regularization can often give bett
 
 More specifically the penalty term is as follows:
 
-![elastic net](../docs/ElasticNetCost.png)
+![elastic net](docs/ElasticNetCost.png)
 
 
 
