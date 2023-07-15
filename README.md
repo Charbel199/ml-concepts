@@ -7,4 +7,7 @@ I will be trying to keep a clear separation between all the concepts and update 
 
 **Note: Most explanations are very summarized, the goal here is to quickly refresh your mind when looking up a concept and emphasizing on the use cases, benefits and drawbacks.**
 
+The **md** file structure is designed for seamless import into Obsidian.md
 
+
+![](docs/obsidian.png)
