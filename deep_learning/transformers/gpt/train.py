@@ -42,7 +42,7 @@ data = torch.tensor(encode(text), dtype=torch.long)
 
 train_data, val_data = create_dataset(data, train_size=TRAIN_SIZE)
 
-def prepare_data(data: torch.Tensor, block_size = 8, batch_size = 4):
+def generate_batch(data: torch.Tensor, block_size = 8, batch_size = 4):
     # Genereate batch_size number of indexes
     random_index = torch.randint(len(data) - block_size, (batch_size,))    
     
@@ -56,8 +56,8 @@ def prepare_data(data: torch.Tensor, block_size = 8, batch_size = 4):
 
 
 
-x_train,y_train = prepare_data(data=train_data, block_size=BLOCK_SIZE, batch_size=BATCH_SZE)
-x_val,y_val = prepare_data(data=val_data, block_size=BLOCK_SIZE, batch_size=BATCH_SZE)
+x_train,y_train = generate_batch(data=train_data, block_size=BLOCK_SIZE, batch_size=BATCH_SZE)
+x_val,y_val = generate_batch(data=val_data, block_size=BLOCK_SIZE, batch_size=BATCH_SZE)
 
 print(x_train.shape)
 print(x_train)
