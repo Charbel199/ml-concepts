@@ -2,3 +2,4 @@
 dataset/
 runs/
 .obsidian
+__pycache__/
