@@ -3,3 +3,4 @@ dataset/
 runs/
 .obsidian
 __pycache__/
+.vscode
