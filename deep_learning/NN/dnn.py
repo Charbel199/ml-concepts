@@ -5,9 +5,8 @@ import torchvision.datasets as datasets
 from torch.utils.data import DataLoader
 import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
-import numpy as np
 import torch.optim as optim
-
+from tqdm import tqdm
 
 class DNN(nn.Module):
     def __init__(self, image_dimension):
@@ -27,9 +26,7 @@ class DNN(nn.Module):
         return self.network(x)
 
 
-# device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-device = torch.device('cpu')
-
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 learning_rate = 3e-4
 momentum = 0.9
 batch_size = 32
@@ -56,7 +53,8 @@ test_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 model.train()
 
 for epoch in range(epochs):
-    for batch_idx, data in enumerate(train_loader):
+    loop = tqdm(train_loader, leave=True)
+    for batch_idx, data in enumerate(loop):
         inputs, labels = data
         inputs, labels = inputs.to(device), labels.to(device)
 
@@ -69,20 +67,20 @@ for epoch in range(epochs):
         loss.backward()
         optimizer.step()
 
-        if batch_idx == 0:
-            print(
-                f"Epoch [{epoch}/{epochs}] Batch {batch_idx}/{len(train_loader)} \
-                      Loss: {loss:.4f}"
-            )
+        # Update tqdm progress bar
+        loop.set_description(f"Epoch [{epoch}/{epochs}]")
+        loop.set_postfix(
+            loop=loss.item()
+        )
 
 data_iter = iter(test_loader)
-images, labels = data_iter.next()
+images, labels = next(data_iter)
 
 classes = ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')
 # print images
 plt.imshow(images[0][0])
 plt.show()
 print('GroundTruth: ', ' '.join('%5s' % classes[labels[j]] for j in range(batch_size)))
-outputs = model(images)
+outputs = model(images.to(device))
 predicted = torch.argmax(outputs, 1).tolist()
 print('Predicted: ', ' '.join('%5s' % classes[round(predicted[j])] for j in range(batch_size)))
