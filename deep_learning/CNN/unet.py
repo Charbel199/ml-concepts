@@ -10,7 +10,7 @@ import torch
 from torch.utils.data import DataLoader
 from torchvision import transforms
 import matplotlib.pyplot as plt
-
+import numpy as np
 # Visualization function
 def visualize_predictions(model, loader, device, num_samples=4):
     model.eval()
@@ -26,7 +26,7 @@ def visualize_predictions(model, loader, device, num_samples=4):
     fig, axs = plt.subplots(num_samples, 3, figsize=(12, num_samples * 4))
     for i in range(num_samples):
         img = images[i].cpu().numpy().transpose(1, 2, 0)  # Convert to HWC for visualization
-        mask_gt = masks[i].cpu().numpy()
+        mask_gt = masks[i].cpu().numpy().squeeze()
         mask_pred = predictions[i].cpu().numpy()
 
         axs[i, 0].imshow((img - img.min()) / (img.max() - img.min()))  # Normalize for display
@@ -61,7 +61,7 @@ class DoubleConv(nn.Module):
 
 
 class UNet(nn.Module):
-    def __init__(self, in_channels=3, out_channels=21):
+    def __init__(self, in_channels=3, out_channels=2):
         super(UNet, self).__init__()
         self.encoder1 = DoubleConv(in_channels, 64)
         self.pool1 = nn.MaxPool2d(2)
@@ -90,15 +90,23 @@ class UNet(nn.Module):
 
 # Hyperparameters
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-BATCH_SIZE = 8
+BATCH_SIZE = 32
 LEARNING_RATE = 1e-3
-EPOCHS = 5
-NUM_CLASSES = 37  
+EPOCHS = 20
+NUM_CLASSES = 3   # Background, outline, content
 
-# Dataset Loading
+
+# Dataset transformations
 transform = transforms.Compose([
-    transforms.Resize((128, 128)),  # Resize images to a manageable size
-    ToTensor(),
+    transforms.Resize((128, 128)),  # Resize images to 128x128
+    transforms.ToTensor(),         # Convert to tensor
+    transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),  # Normalize
+])
+
+# Target transformation to ensure proper masks
+target_transform = transforms.Compose([
+    transforms.Resize((128, 128), interpolation=transforms.InterpolationMode.NEAREST),
+    transforms.Lambda(lambda x: torch.as_tensor(np.array(x), dtype=torch.long) - 1),  # Subtract 1 from all values
 ])
 
 # Load the Oxford Pets dataset
@@ -108,21 +116,23 @@ dataset = OxfordIIITPet(
     target_types="segmentation",
     download=True,
     transform=transform,
-    target_transform=transform,
+    target_transform=target_transform,
 )
+
 
 # Split into train and val datasets
 train_size = int(0.8 * len(dataset))
 val_size = len(dataset) - train_size
 train_dataset, val_dataset = torch.utils.data.random_split(dataset, [train_size, val_size])
 
-train_loader = DataLoader(train_dataset, batch_size=8, shuffle=True)
-val_loader = DataLoader(val_dataset, batch_size=8, shuffle=False)
+train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=True)
+val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False)
 
 # Initialize model, loss, and optimizer
 model = UNet(in_channels=3, out_channels=NUM_CLASSES).to(DEVICE)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
+scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=3, gamma=0.1)
 
 
 # Training loop
@@ -131,11 +141,9 @@ def train_fn(loader, model, optimizer, loss_fn, device):
     loop = tqdm(loader, leave=True)
     for batch_idx, (data, targets) in enumerate(loop):
         data, targets = data.to(device), targets.long().to(device)
-
         # Forward pass
         outputs = model(data)
         loss = loss_fn(outputs, targets)
-
         # Backward pass
         optimizer.zero_grad()
         loss.backward()
