@@ -12,7 +12,7 @@ The main components of an SVM are:
 <br />
 <br />
 
-![SVM](../../docs/SVM.png)
+![SVM](../docs/SVM.png)
 
 <br />
 
@@ -32,7 +32,7 @@ Some of the most relevant SVM kernels:
 * Gaussian radial basis function (RBF): Same use-case as the Gaussian kernel
 * Laplace RBF kernel: Same use-case as the Gaussian kernel
 
-Here is a simple SVR [code sample](supervised_learning/SVR.py)
+Here is a simple SVR [code sample](../basic_machine_learning/svm.py)
 
 ## Reference(s)
 [Support Vector Machines: Theory and Applications](https://www.researchgate.net/publication/221621494_Support_Vector_Machines_Theory_and_Applications)
