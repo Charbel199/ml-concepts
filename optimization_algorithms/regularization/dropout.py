@@ -4,7 +4,7 @@ import torch.optim as optim
 import matplotlib.pyplot as plt
 
 # Create a simple dataset
-torch.manual_seed(42)
+torch.manual_seed(52)
 X = torch.randn(500, 10)
 y = (X[:, 0] + X[:, 1] * 2 + X[:, 2] * 3).unsqueeze(1) + 0.1 * torch.randn(500, 1)
 
@@ -34,10 +34,11 @@ class DropoutModel(nn.Module):
         self.layers = nn.Sequential(
             nn.Linear(10, 50),
             nn.ReLU(),
-            nn.Dropout(0.5),  # Apply dropout with p=0.5
+            nn.Dropout(0.3),  # Apply dropout with p=0.5
             nn.Linear(50, 50),
+            #nn.BatchNorm1d(50), # Uncomment here for major improvements
             nn.ReLU(),
-            nn.Dropout(0.5),  # Apply dropout with p=0.5
+            nn.Dropout(0.3),  # Apply dropout with p=0.5
             nn.Linear(50, 1)
         )
     
@@ -84,26 +85,30 @@ train_losses_dropout, test_losses_dropout = train_model(
     model_dropout, optimizer_dropout, criterion, train_X, train_y, test_X, test_y, epochs=100
 )
 
-# Plot the training and test loss
+# Plot Train Loss and Test Loss with and without Dropout
 plt.figure(figsize=(12, 6))
+
+# Train Loss
 plt.subplot(1, 2, 1)
-plt.plot(train_losses_no_dropout, label='Train Loss (No Dropout)')
-plt.plot(test_losses_no_dropout, label='Test Loss (No Dropout)')
+plt.plot(train_losses_no_dropout, label='No Dropout')
+plt.plot(train_losses_dropout, label='With Dropout')
 plt.xlabel('Epoch')
 plt.ylabel('Loss')
-plt.title('No Dropout')
+plt.title('Train Loss')
 plt.legend()
 
+# Test Loss
 plt.subplot(1, 2, 2)
-plt.plot(train_losses_dropout, label='Train Loss (With Dropout)')
-plt.plot(test_losses_dropout, label='Test Loss (With Dropout)')
+plt.plot(test_losses_no_dropout, label='No Dropout')
+plt.plot(test_losses_dropout, label='With Dropout')
 plt.xlabel('Epoch')
 plt.ylabel('Loss')
-plt.title('With Dropout')
+plt.title('Test Loss')
 plt.legend()
 
 plt.tight_layout()
 plt.show()
+
 
 
 '''
