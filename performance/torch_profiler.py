@@ -14,8 +14,8 @@ transform = T.Compose(
     [T.Resize(224),
      T.ToTensor(),
      T.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
-train_set = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform)
-train_loader = torch.utils.data.DataLoader(train_set, batch_size=64, shuffle=True)
+train_set = torchvision.datasets.CIFAR10(root='./dataset', train=True, download=True, transform=transform)
+train_loader = torch.utils.data.DataLoader(train_set, batch_size=128, shuffle=True, num_workers=4)
 
 device = torch.device("cuda:0")
 
@@ -39,7 +39,7 @@ class SmallCNN(nn.Module):
         x = self.fc1(x)
         return x
 model = SmallCNN().to(device)
-
+model = torch.compile(model, mode='reduce-overhead')
 criterion = torch.nn.CrossEntropyLoss().cuda(device)
 optimizer = torch.optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
 model.train()
@@ -47,8 +47,10 @@ model.train()
 
 def train(data):
     inputs, labels = data[0].to(device=device), data[1].to(device=device)
-    outputs = model(inputs)
-    loss = criterion(outputs, labels)
+
+    with torch.autocast('cuda'):
+        outputs = model(inputs)
+        loss = criterion(outputs, labels)
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
@@ -56,7 +58,7 @@ def train(data):
 
 with torch.profiler.profile(
         schedule=torch.profiler.schedule(wait=1, warmup=1, active=3, repeat=1),
-        on_trace_ready=torch.profiler.tensorboard_trace_handler('./log/resnet183'),
+       # on_trace_ready=torch.profiler.tensorboard_trace_handler('./log/resnet187'),
         record_shapes=True,
         profile_memory=True,
         with_stack=True
@@ -79,3 +81,5 @@ with torch.profiler.profile(
 #         break
 #     train(batch_data)
 # prof.stop()
+
+prof.export_chrome_trace("trace.json")
